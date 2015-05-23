@@ -11,7 +11,7 @@ class ServicesController < ApplicationController
   # GET /services/1.json
   def show
     @documents = Document.find_by_sql(["SELECT * FROM documents WHERE (service_id = :id )", {:id => params[:id]}])
-   # @document = Document.new
+    @document = Document.new
   end
 
   # GET /services/new

@@ -28,4 +28,4 @@
 
 <br> 
 <br>
-<%= link_to 'New Service', new_service_path(:ministryid => @ministry.id) %>
+<%= link_to 'New Service', new_service_path(:ministry_id => @ministry.id) %>
